@@ -1,3 +1,4 @@
+@import url(/assets/css/gallery.css);
 :root {
   --primary-color: #2196f3; /* ocean blue */
   --secondary-color: #8d6e63; /* sandy brown */
@@ -43,15 +44,6 @@ p {
   margin-bottom: 10px;
 }
 
-/* Colors */
-:root {
-  --primary-color: #2196f3; /* ocean blue */
-  --secondary-color: #8d6e63; /* sandy brown */
-  --background-color: #ffffff; /* white */
-  --accent-color-1: #f44336; /* red */
-  --accent-color-2: #4caf50; /* green */
-  --accent-color-3: #ffc107; /* yellow */
-}
 header {
   background-color: var(--primary-color);
   color: var(--background-color);
