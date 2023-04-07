@@ -50,16 +50,18 @@ header {
   text-align: center;
 }
 header ul {
-  font-size: large;
-  font-weight: 300;
+  
   list-style: none;
   display: flex;
   justify-content: space-evenly;
 }
 header ul li {
+  font-size: 30px;
+  font-style: oblique;
+  width: 200px;
   background-color: var(--background-color);
   color: var(--dark-blue);
-  padding: 10px;
+  padding: 15px;
   margin: 2px;
   border: none;
   border-radius: 50%;
@@ -81,9 +83,11 @@ nav {
 }
 
 nav a {
+  flex-basis: 12%;
   color: var(--background-color);
   color: var(--secondary-color);
   text-decoration: none;
+  text-align: center;
   padding: 15px 40px;
   margin: 0 2px;
   font-size: 18px;
@@ -96,12 +100,13 @@ nav a:hover {
   scale: 1.1;
 }
 
+
 #banner {
   background-color: var(--primary-color);
   height: 320px;
   margin-bottom: 20px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 #welcomeBox {
@@ -117,7 +122,7 @@ nav a:hover {
   width: 75%;
 }
 
-#image {
+.image {
   background-image: url(/assets/images/Water.jpg);
   background-repeat: no-repeat;
   background-size: cover;
