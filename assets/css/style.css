@@ -49,21 +49,23 @@ header {
   padding: 20px;
   text-align: center;
 }
-header div {
+header ul {
+  
+  list-style: none;
   display: flex;
-  justify-content: space-evenly;
-}
-header div a {
-  font-size: 20px;
+  justify-content: space-evenly;}
+header ul li {
+  font-size: 30px;
   font-style: oblique;
   width: 200px;
   background-color: var(--background-color);
   color: var(--dark-blue);
-  padding: 10px;
+  padding: 15px;
   margin: 2px;
   border: none;
   border-radius: 50%;
 }
+
 
 header ul a:hover {
   background-color: var(--sand);
@@ -97,6 +99,7 @@ nav a:hover {
   color: var(--background-color);
   scale: 1.1;
 }
+
 
 #banner {
   background-color: var(--primary-color);
