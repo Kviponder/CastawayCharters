@@ -1,4 +1,4 @@
-@import url(/assets/css/gallery.css);
+
 :root {
   --primary-color: #2196f3; /* ocean blue */
   --secondary-color: #8d6e63; /* sandy brown */
@@ -118,7 +118,7 @@ nav a:hover {
   width: 75%;
 }
 
-.image {
+#image {
   background-image: url(/assets/images/Water.jpg);
   background-repeat: no-repeat;
   background-size: cover;
