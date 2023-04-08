@@ -65,9 +65,12 @@ header ul li {
   border: none;
   border-radius: 50%;
 }
+header ul li a {
+  text-decoration: none;
+}
 
 
-header ul a:hover {
+header ul li:hover {
   background-color: var(--sand);
   text-decoration: underline;
   scale: 1.1;
