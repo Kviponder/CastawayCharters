@@ -1,4 +1,5 @@
 :root {
+  /* Colors */
   --primary-color: #2196f3; /* ocean blue */
   --secondary-color: #8d6e63; /* sandy brown */
   --background-color: #ffffff; /* white */
@@ -8,53 +9,53 @@
   --accent-color-1: #f44336; /* red */
   --accent-color-3: #ffc107; /* yellow */
 }
+
 /* Typography */
 body {
-  margin: 0;
   font-family: Georgia, serif;
   font-size: 16px;
   background-color: var(--background-color);
-  color: var(--primary-color);
 }
 
 h1,
 h2 {
-  margin-top: 0;
-  margin-bottom: 10px;
+  margin: 0 0 10px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 h1 {
   font-family: Montserrat, sans-serif;
   font-size: 36px;
-  font-weight: bold;
   text-align: center;
-  text-transform: uppercase;
 }
 
 h2 {
   font-family: Georgia, serif;
   font-size: 24px;
-  font-weight: bold;
-  text-transform: uppercase;
 }
 
 p {
-  margin-top: 0;
-  margin-bottom: 10px;
+  margin: 0 0 10px;
 }
 
+/* Header */
 header {
   background-color: var(--primary-color);
   color: var(--background-color);
   padding: 20px;
   text-align: center;
 }
+
 header ul {
-  
   list-style: none;
   display: flex;
-  justify-content: space-evenly;}
-header ul li {
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
+}
+
+header li {
   font-size: 30px;
   font-style: oblique;
   width: 200px;
@@ -62,21 +63,21 @@ header ul li {
   color: var(--dark-blue);
   padding: 15px;
   margin: 2px;
-  border: none;
   border-radius: 50%;
-}
-header ul li a {
-  text-decoration: none;
-}
-
-
-header ul li:hover {
-  background-color: var(--sand);
-  text-decoration: underline;
-  scale: 1.1;
   box-shadow: 0px 5px 12px var(--sand);
 }
 
+header a {
+  text-decoration: none;
+}
+
+header li:hover {
+  background-color: var(--sand);
+  text-decoration: underline;
+  transform: scale(1.1);
+}
+
+/* Navigation */
 nav {
   display: flex;
   justify-content: space-around;
@@ -87,7 +88,6 @@ nav {
 
 nav a {
   flex-basis: 12%;
-  color: var(--background-color);
   color: var(--secondary-color);
   text-decoration: none;
   text-align: center;
@@ -100,10 +100,10 @@ nav a {
 nav a:hover {
   background-color: var(--secondary-color);
   color: var(--background-color);
-  scale: 1.1;
+  transform: scale(1.1);
 }
 
-
+/* Banner */
 #banner {
   background-color: var(--primary-color);
   height: 320px;
@@ -113,8 +113,8 @@ nav a:hover {
 }
 
 #welcomeBox {
-  height: 80%;
   max-width: 50%;
+  height: 80%;
   padding: 15px;
   margin: 5px auto;
   border: none;
@@ -126,20 +126,17 @@ nav a:hover {
 }
 
 .image {
-  background-image: url(/assets/images/Water.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+  background: url(/assets/images/Water.jpg) no-repeat center center / cover;
 }
 
 #banner h4 {
   font-family: Montserrat, sans-serif;
   font-size: 24px;
-  font-weight: bold;
   margin-top: 10px;
   text-transform: uppercase;
 }
 
+/* Tagline */
 #tagline {
   background-color: var(--secondary-color);
   color: var(--background-color);
@@ -154,6 +151,7 @@ nav a:hover {
   text-transform: uppercase;
 }
 
+/* Services */
 #services {
   display: flex;
   flex-wrap: wrap;
@@ -168,11 +166,10 @@ nav a:hover {
   border-radius: 10px;
   padding: 20px;
   margin: 20px;
-  width: 300px;
-  text-align: center;
-  justify-content: space-around;
   min-height: 150px;
+  text-align: center;
 }
+
 .serviceItem:hover {
   background-color: lightblue;
   color: navy;
@@ -182,6 +179,7 @@ nav a:hover {
   transform: translateX(5px);
 }
 
+/* Footer */
 footer {
   border-top: 8px solid var(--sand);
   background-color: var(--primary-color);
